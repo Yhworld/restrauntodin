@@ -1,0 +1,31 @@
+{
+  "name": "restrauntodin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yhworld/restrauntodin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yhworld/restrauntodin/issues"
+  },
+  "homepage": "https://github.com/Yhworld/restrauntodin#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.4",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
