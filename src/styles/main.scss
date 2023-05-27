@@ -1,19 +1,31 @@
+@import url('https://fonts.cdnfonts.com/css/oh-beloved');
+
+$primary-color: #0e0d0e;
+$font-color: #fff;
+// $cool-color:
+$font-stack: 'oh beloved', sans-serif;
 $edge: 5rem;
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: $primary-color;
+  color: $font-color;
 }
 
 section.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+//   background: $primary-color;
+//   color: $font-color;
 }
 
 h1 {
   margin-left: $edge;
+  font-family: $font-stack;
+  font-size: 34px;
 }
 
 nav {
@@ -22,5 +34,22 @@ nav {
   gap: 2px;
   button {
     border: none;
+    background: none;
+    color: $font-color;
   }
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+        margin: 20px 0px;
+    }
+    .navbar {
+       display: flex;
+       flex-direction: column;
+    }
+    nav {
+        margin: 0px 10px;
+        position: sticky;
+    }
 }
