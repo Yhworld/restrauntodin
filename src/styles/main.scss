@@ -1,0 +1,26 @@
+$edge: 5rem;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-left: $edge;
+}
+
+nav {
+  margin-right: $edge;
+  display: flex;
+  gap: 2px;
+  button {
+    border: none;
+  }
+}
