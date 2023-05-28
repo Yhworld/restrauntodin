@@ -1,5 +1,5 @@
 const path =require("path");
-
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: "development",
@@ -32,6 +32,17 @@ module.exports = {
                     'sass-loader'
                 ],
             },
+            {
+              test: /\.(png|svg|jpg|jpeg|gif)$/i,
+              type: 'asset/resource',
+            },
+          ],
+        },
+        plugins: [
+          new HtmlWebpackPlugin({
+            title: 'Webpack App',
+            filename: 'index.html',
+            template: 'src/template.html',
+          }),
         ],
-    },
-}
+      }
