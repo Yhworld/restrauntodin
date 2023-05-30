@@ -1,12 +1,13 @@
 @import url('https://fonts.cdnfonts.com/css/oh-beloved');
 @import url('https://fonts.cdnfonts.com/css/love-coffee-2');
-
+@import url('https://fonts.cdnfonts.com/css/heartfield');
 
 $primary-color: #0e0d0e;
 $font-color: #fff;
 // $cool-color:
 $primary-font: 'Love Coffee', sans-serif;;
 $font-stack: 'oh beloved', sans-serif;
+$about-font: 'Heartfield', sans-serif;
 $edge: 5rem;
 
 body {
@@ -94,7 +95,7 @@ nav {
   }
 
   main#main {
-    height: 90vh;
+    height: 95vh;
     display: flex;
 }
 
@@ -141,5 +142,36 @@ nav {
       font-weight: bold;
       font-family: $primary-font;
       margin-top: 2rem;
+  }
+}
+
+.about {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background: url("..//assets/aboutblob.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 10rem;
+
+
+  img {
+    width: 30%;
+  }
+
+  .about-text {
+     h3 {
+      font-family: $font-stack;
+      font-size: 38px;
+      font-weight: bold;
+     }
+  }
+
+  p {
+    font-family: $about-font;
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgb(204, 204, 204);
   }
 }
