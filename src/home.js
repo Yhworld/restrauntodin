@@ -1,4 +1,5 @@
 import renderHero from "./hero";
+import waiter from ".//assets/aboutplate.png"
 
 function header() {
   const titlebar = document.createElement("section");
@@ -12,6 +13,39 @@ function header() {
   titlebar.appendChild(createNavbar());
   return titlebar;
 }
+
+const createAbout = () => {
+  const about = document.createElement("section")
+  about.classList.add("about")
+
+  const aboutImage = document.createElement("img");
+  aboutImage.src = waiter
+  aboutImage.alt="pic"
+
+  // about.appendChild(aboutImage);
+  about.innerHTML = `
+  <img src=${waiter} alt ="pic" />
+  <div class="about-text">
+  <h3>
+  Best Cuisine In 
+  Town - Meals
+  <br>
+  Right From the Oven
+  </h3>
+
+  <p>
+  Lorem ipsum dolor sit amet consectetur adipisicing 
+  <br>
+  elit. Culpa vel fuga rerum ex, qui nostrum voluptas 
+  <br>
+  consequuntur est odit ea indunt quam nemo 
+  <br>
+  aliquam non laudantium velit! Ex, quae voluptas!
+  </p>
+  `
+  return about
+}
+
 
 const createNavbar = () => {
   const nav = document.createElement("nav");
@@ -65,6 +99,7 @@ const initialize = () => {
   const content = document.querySelector("body");
   content.appendChild(header());
   content.appendChild(createMain())
+  content.appendChild(createAbout())
 
   setActiveButton(document.querySelector(".btn-nav"));
   renderHero();
