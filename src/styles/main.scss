@@ -84,6 +84,32 @@ nav {
         display: none;
       }
     }
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+
+      img {
+        width: 50%;
+      }
+    
+      .about-text {
+         h3 {
+          font-family: $font-stack;
+          font-size: 18px;
+          font-weight: bold;
+         }
+      }
+    
+      p {
+        font-family: $about-font;
+        font-size: 14px;
+        font-weight: lighter;
+        color: rgb(204, 204, 204);
+      }
+
+    }
 }
 
 .btn-nav.active {
@@ -145,33 +171,37 @@ nav {
   }
 }
 
+@media (min-width: 769px) {
+  .about {
+    background: url("..//assets/aboutblob.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 10rem;
+    height: 80vh;
+
+    img {
+      width: 30%;
+    }
+  
+    .about-text {
+       h3 {
+        font-family: $font-stack;
+        font-size: 38px;
+        font-weight: bold;
+       }
+    }
+  
+    p {
+      font-family: $about-font;
+      font-size: 24px;
+      font-weight: lighter;
+      color: rgb(204, 204, 204);
+    }
+  }
+}
+
 .about {
   display: flex;
-  height: 80vh;
   align-items: center;
   justify-content: center;
-  background: url("..//assets/aboutblob.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  gap: 10rem;
-
-
-  img {
-    width: 30%;
-  }
-
-  .about-text {
-     h3 {
-      font-family: $font-stack;
-      font-size: 38px;
-      font-weight: bold;
-     }
-  }
-
-  p {
-    font-family: $about-font;
-    font-size: 24px;
-    font-weight: lighter;
-    color: rgb(204, 204, 204);
-  }
 }
