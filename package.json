@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Yhworld/restrauntodin#readme",
   "devDependencies": {
     "css-loader": "^6.7.4",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.1",
     "sass": "^1.62.1",
     "sass-loader": "^13.2.2",
@@ -29,6 +30,7 @@
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5"
   }
 }
