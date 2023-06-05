@@ -118,11 +118,13 @@ nav {
   
 .btn-nav:hover {
     transform: translateY(-20%);
+    cursor: pointer;
   }
 
   main#main {
     height: 95vh;
     display: flex;
+    justify-content: center;
 }
 
   section.hero {
@@ -204,4 +206,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.menu-header {
+  font-family: 'oh beloved';
+  text-align: center;
+  font-size: 24px;
+
+.line {
+  width: 143px;
+  height: 10px;
+  border: solid 5px #000;
+  border-color: #F6B400 transparent transparent transparent;
+  border-radius: 50%/10px 10px 0 0;
+}
 }
