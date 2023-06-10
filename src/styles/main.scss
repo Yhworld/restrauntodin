@@ -1,13 +1,14 @@
-@import url('https://fonts.cdnfonts.com/css/oh-beloved');
-@import url('https://fonts.cdnfonts.com/css/love-coffee-2');
-@import url('https://fonts.cdnfonts.com/css/heartfield');
+@import '~font-awesome/css/font-awesome.css';
+@import url("https://fonts.cdnfonts.com/css/oh-beloved");
+@import url("https://fonts.cdnfonts.com/css/love-coffee-2");
+@import url("https://fonts.cdnfonts.com/css/heartfield");
 
 $primary-color: #0e0d0e;
 $font-color: #fff;
 // $cool-color:
-$primary-font: 'Love Coffee', sans-serif;;
-$font-stack: 'oh beloved', sans-serif;
-$about-font: 'Heartfield', sans-serif;
+$primary-font: "Love Coffee", sans-serif;
+$font-stack: "oh beloved", sans-serif;
+$about-font: "Heartfield", sans-serif;
 $edge: 5rem;
 
 body {
@@ -22,8 +23,8 @@ section.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-//   background: $primary-color;
-//   color: $font-color;
+  //   background: $primary-color;
+  //   color: $font-color;
 }
 
 h1 {
@@ -41,109 +42,21 @@ nav {
     background: none;
     color: #fff;
     font-family: $primary-font;
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
-
-    .navbar {
-       display: flex;
-       flex-direction: column;
-       position: relative;
-       overflow: hidden;    
-       
-       h1{
-        font-size: 2rem;
-        margin: 20px 0px;
-        opacity: 0;
-        animation: slide-in 1.8s forwards;
-    }
-
-      @keyframes slide-in {
-        0% {
-          transform: translateY(100%);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-    }
-    nav {
-        margin: 0px 10px 10px 10px;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      color: #0e0d0e;
-
-      img {
-        display: none;
-      }
-    }
-
-    .about {
-      display: flex;
-      flex-direction: column;
-      height: 50vh;
-
-      img {
-        width: 50%;
-      }
-    
-      .about-text {
-         h3 {
-          font-family: $font-stack;
-          font-size: 18px;
-          font-weight: bold;
-         }
-      }
-    
-      p {
-        font-family: $about-font;
-        font-size: 14px;
-        font-weight: lighter;
-        color: rgb(204, 204, 204);
-      }
-
-    }
-}
-
-.btn-nav.active {
-    border-bottom: 2px solid orange;
-  }
-  
-.btn-nav:hover {
-    transform: translateY(-20%);
-    cursor: pointer;
-  }
-
-  main#main {
-    height: 95vh;
+  .navbar {
     display: flex;
-    justify-content: center;
-}
-
-  section.hero {
-    display: flex;
-    background: url("..//assets/background.svg");
-    background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    background-position: right;
-    background-size: cover;
-    gap: 35%;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
 
-    img {
-      width: 30%;
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px;
       opacity: 0;
-      animation: slide-in 1s forwards;
-      // margin-right: 18%;
+      animation: slide-in 1.8s forwards;
     }
 
     @keyframes slide-in {
@@ -156,20 +69,106 @@ nav {
         opacity: 1;
       }
     }
+  }
+  nav {
+    margin: 0px 10px 10px 10px;
+  }
 
-    .hero-text {
-      font-size: 30px;
-      font-family: $font-stack;
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0e0d0e;
+
+    img {
+      display: none;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+    img {
+      width: 50%;
     }
 
-    button.hero-btn {
-      padding: 15px 40px;
-      background: transparent;
-      border: 2px solid #fff;
-      color: #fff;
-      font-weight: bold;
-      font-family: $primary-font;
-      margin-top: 2rem;
+    .about-text {
+      h3 {
+        font-family: $font-stack;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    p {
+      font-family: $about-font;
+      font-size: 14px;
+      font-weight: lighter;
+      color: rgb(204, 204, 204);
+    }
+  }
+}
+
+.btn-nav.active {
+  border-bottom: 2px solid orange;
+}
+
+.btn-nav:hover {
+  transform: translateY(-20%);
+  cursor: pointer;
+}
+
+main#main {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+}
+
+section.hero {
+  display: flex;
+  background: url("..//assets/background.svg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  background-position: right;
+  background-size: cover;
+  gap: 35%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 30%;
+    opacity: 0;
+    animation: slide-in 1s forwards;
+    // margin-right: 18%;
+  }
+
+  @keyframes slide-in {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .hero-text {
+    font-size: 30px;
+    font-family: $font-stack;
+  }
+
+  button.hero-btn {
+    padding: 15px 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    font-family: $primary-font;
+    margin-top: 2rem;
   }
 }
 
@@ -184,15 +183,15 @@ nav {
     img {
       width: 30%;
     }
-  
+
     .about-text {
-       h3 {
+      h3 {
         font-family: $font-stack;
         font-size: 38px;
         font-weight: bold;
-       }
+      }
     }
-  
+
     p {
       font-family: $about-font;
       font-size: 24px;
@@ -208,17 +207,63 @@ nav {
   justify-content: center;
 }
 
-
 .menu-header {
-  font-family: 'oh beloved';
+  font-family: "oh beloved";
   text-align: center;
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.line {
-  width: 143px;
-  height: 10px;
-  border: solid 5px #000;
-  border-color: #F6B400 transparent transparent transparent;
-  border-radius: 50%/10px 10px 0 0;
+  .line {
+    width: 143px;
+    height: 10px;
+    border: solid 5px #000;
+    border-color: #f6b400 transparent transparent transparent;
+    border-radius: 50%/10px 10px 0 0;
+  }
 }
+
+.menutbl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  justify-items: stretch;
+  padding: 0 10rem;
+  padding-top: 2rem;
+  align-items: center;
+
+  img {
+    width: 70%;
+  }
+
+  h3 {
+    text-transform: capitalize;
+    color: #f6b400;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "love coffee";
+  }
+
+  p.fast_item {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: -webkit-max-content 1fr -webkit-max-content;
+    grid-template-columns: max-content 1fr max-content;
+    grid-column-gap: 1rem;
+    justify-content: stretch;
+    align-items: center;
+    font-family: system-ui;
+  }
+
+  span.underline {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 1rem;
+    background-color: lightslategray;
+  }
 }
