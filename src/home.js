@@ -1,4 +1,5 @@
 import renderHero from "./hero";
+import renderMenu from "./menu";
 import waiter from ".//assets/aboutplate.png"
 
 function header() {
@@ -55,6 +56,8 @@ const createNavbar = () => {
   homeBtn.textContent = "Home";
   homeBtn.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
+    const about = document.querySelector('.about')
+    about.style.display = "flex";
     setActiveButton(homeBtn);
     renderHero();
   });
@@ -64,10 +67,29 @@ const createNavbar = () => {
   const menuBtn = document.createElement("button");
   menuBtn.classList.add("btn-nav");
   menuBtn.textContent = "Menu";
+  menuBtn.addEventListener("click", (e) => {    
+    const about = document.querySelector('.about')
+    about.style.display = "none";
+    if (e.target.classList.contains("active")) return;
+    setActiveButton(menuBtn);    
+
+    renderMenu();
+
+  });
 
   const contactBtn = document.createElement("button");
   contactBtn.classList.add("btn-nav");
   contactBtn.textContent = "Contact";
+  contactBtn.addEventListener("click", (e) => {    
+    const about = document.querySelector('.about')
+    about.style.display = "none";
+    if (e.target.classList.contains("active")) return;
+    setActiveButton(contactBtn);    
+
+    renderContact();
+
+  });
+
 
   nav.appendChild(homeBtn);
   nav.appendChild(menuBtn);
