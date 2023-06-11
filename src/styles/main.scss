@@ -267,3 +267,9 @@ section.hero {
     background-color: lightslategray;
   }
 }
+
+.box {
+  display: flex;
+  gap: 20rem;
+  align-items: center;
+}
