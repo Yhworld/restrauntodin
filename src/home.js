@@ -1,5 +1,6 @@
 import renderHero from "./hero";
 import renderMenu from "./menu";
+import renderContact from "./contact";
 import waiter from ".//assets/aboutplate.png"
 
 function header() {
