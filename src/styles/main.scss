@@ -268,8 +268,48 @@ section.hero {
   }
 }
 
-.box {
+
+.contact {
   display: flex;
-  gap: 20rem;
   align-items: center;
+  height: 70vh;
+  line-height: 2;
+  gap: 10rem;
+
+  .contact-details {
+    font-size: 22px;
+}
+
+.contact-logo {
+  font-family: $primary-font;
+  color: #F6B400;
+}
+
+.location-details {
+  color: #ccc;
+  font-family: system-ui;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 15px;
+}
+
+img.contact-image {
+  width: 40rem;
+}
+
+.contact-icons img {
+  width: 24px;
+}
+
+.btn-contact {
+  margin-top: 2rem;
+  padding: 10px 30px;
+  border-radius: 7px;
+  font-weight: bold;
+  background: #f6b400;
+  border: none;
+}
+
 }
