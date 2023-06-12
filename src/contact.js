@@ -1,35 +1,50 @@
-import map from './/assets/Paper map.gif'
+import map from './/assets/Paper map.gif';
+import insta from ".//assets/instagram.svg";
+import linkedin from './/assets/linkedin-in.svg';
+import facebook from './/assets/facebook.svg';
+import twitter from './/assets/twitter.svg';
 
 function contact() {
     const contact = document.createElement('div');
     contact.className = 'contact';
 
-    const box = document.createElement('div');
-    box.className = 'box';
+    // const box = document.createElement('div');
+    // box.className = 'box';
 
-    contact.appendChild(box)
+    // contact.appendChild(box)
 
-    box.innerHTML = `
-    <civ
-    <img src=${map} class="mao" />
+    // const contactImage = document.createElement('img');
+    // contactImage.src = map
+
+    // contact.appendChild(contactImage);
+
+    contact.innerHTML = `
+    <img src="${map}" class="contact-image"/>
     <div class="contact-details">
-    <h2 class="contact-logo">Grill Shack</h2>
+    <h2 class="contact-logo">Grill Shack.</h2>
     <p class="location-details">
     23, Avenue of the lion, KE
-    </p>
-    <p>
+    <br />
     enquiries@grillshack.com
-    </p>
-    <p>
+    <br />
     +254711111117
     <br />
-    contact us
-    </p>
-    <div class="social-media">
+    follow us
+    <br />
+    <div class="contact-icons">
+    <img src=${facebook} />
+    <img src=${twitter} />
+    <img src=${linkedin} />
+    <img src=${insta} />
     </div>
+    </p>
     <button class="btn-contact">Contact Us</button>
     </div>
     `
+    // <img src=${facebook} />
+    // <img src=${twitter} />
+    // <img src=${linkedin} />
+    // <img src=${insta} />
 
     return contact;
 }
