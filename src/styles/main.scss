@@ -45,72 +45,6 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-
-    h1 {
-      font-size: 2rem;
-      margin: 20px 0px;
-      opacity: 0;
-      animation: slide-in 1.8s forwards;
-    }
-
-    @keyframes slide-in {
-      0% {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  }
-  nav {
-    margin: 0px 10px 10px 10px;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #0e0d0e;
-
-    img {
-      display: none;
-    }
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-
-    img {
-      width: 50%;
-    }
-
-    .about-text {
-      h3 {
-        font-family: $font-stack;
-        font-size: 18px;
-        font-weight: bold;
-      }
-    }
-
-    p {
-      font-family: $about-font;
-      font-size: 14px;
-      font-weight: lighter;
-      color: rgb(204, 204, 204);
-    }
-  }
-}
-
 .btn-nav.active {
   border-bottom: 2px solid orange;
 }
@@ -124,6 +58,7 @@ main#main {
   height: 95vh;
   display: flex;
   justify-content: center;
+  overflow-x: clip;
 }
 
 section.hero {
@@ -310,6 +245,105 @@ img.contact-image {
   font-weight: bold;
   background: #f6b400;
   border: none;
+  color: #000;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px;
+      opacity: 0;
+      animation: slide-in 1.8s forwards;
+    }
+
+    @keyframes slide-in {
+      0% {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  nav {
+    margin: 0px 10px 10px 10px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #0e0d0e;
+
+    img {
+      display: none;
+    }
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+
+    img {
+      width: 50%;
+    }
+
+    .about-text {
+      h3 {
+        font-family: $font-stack;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    p {
+      font-family: $about-font;
+      font-size: 14px;
+      font-weight: lighter;
+      color: rgb(204, 204, 204);
+    }
+  }
+
+  .menutbl {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .fast_food {
+      display: none;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    text-align: center;
+  }
+
+  .contact img.contact-image {
+    width: 20rem;
+}
+
+.contact-icons {
+  justify-content: center;
 }
 
 }
