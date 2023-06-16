@@ -358,3 +358,17 @@ img.contact-image {
 }
 
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.fast_food_container, .fast_food, .contact-details {
+  animation: fadeIn 1.7s ease-in-out;
+}
