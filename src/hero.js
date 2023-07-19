@@ -9,6 +9,7 @@ function createHero() {
     // const heroImageGroup = document.createElement("div");
     const heroImage = document.createElement("img");
     heroImage.src = burger
+    heroImage.loading = "lazy"
 
     // heroImageGroup.appendChild(heroImage);
 
