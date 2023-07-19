@@ -20,7 +20,7 @@ function createMenu () {
 
     menuTable.innerHTML = `
      <div class="fast_food">
-     <img src=${burger} />
+     <img src=${burger} loading= "lazy" />
      </div>
      <div class="fast_food_container">
      <h3>Grilled special</h3>
@@ -69,10 +69,10 @@ function createMenu () {
      </p>
      </div>
      <div class="fast_food">
-     <img class="hushburg" src=${mush} />
+     <img class="hushburg" src=${mush} loading= "lazy" />
      </div>
      <div class="fast_food">
-     <img class="drinkimg" src=${drinks} />
+     <img class="drinkimg" src=${drinks} loading= "lazy" />
      </div>
      <div class="fast_food_container">
      <h3>Lemonade</h3>

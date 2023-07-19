@@ -12,6 +12,8 @@ function createHero() {
 
     // heroImageGroup.appendChild(heroImage);
 
+    heroImage.loading = "lazy"
+
     hero.innerHTML = `
     <div class="hero-text">
     <h2>
